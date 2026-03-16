@@ -1,0 +1,136 @@
+.art-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.art-card {
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.art-frame {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.art-frame:hover {
+  transform: scale(1.02);
+  box-shadow: var(--shadow-hover);
+}
+
+.art-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.art-frame:hover .art-img {
+  transform: scale(1.05);
+}
+
+.art-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background: linear-gradient(135deg, var(--purple-50), var(--purple-100));
+  padding: 1rem;
+  text-align: center;
+}
+
+[data-theme="dark"] .art-placeholder {
+  background: linear-gradient(135deg, rgba(168,85,247,0.08), rgba(139,60,255,0.04));
+}
+
+.art-placeholder-icon {
+  font-size: 2.5rem;
+  opacity: 0.5;
+}
+
+.art-placeholder-text {
+  font-family: 'Syne', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.art-placeholder-hint {
+  font-size: 0.68rem;
+  color: var(--text-muted);
+  opacity: 0.6;
+  font-family: monospace;
+  background: var(--accent-light);
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  color: var(--accent);
+}
+
+.art-overlay {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  background: linear-gradient(to top, rgba(10, 5, 20, 0.85) 0%, transparent 100%);
+  padding: 1.25rem 1rem 0.85rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+
+.art-frame:hover .art-overlay {
+  transform: translateY(0);
+}
+
+.art-title {
+  font-family: 'Syne', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.art-tool {
+  font-size: 0.72rem;
+  color: var(--purple-300);
+  font-weight: 500;
+}
+
+.art-note {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  justify-content: center;
+  padding: 1rem;
+  background: var(--accent-light);
+  border-radius: 12px;
+}
+
+.art-note strong {
+  color: var(--accent);
+}
+
+@media (max-width: 768px) {
+  .art-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .art-grid {
+    grid-template-columns: 1fr;
+  }
+}

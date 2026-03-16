@@ -1,0 +1,41 @@
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.25rem;
+}
+.achievement-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  position: relative;
+  overflow: hidden;
+}
+.achievement-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  border-radius: 20px 20px 0 0;
+}
+.ach-gold::before { background: linear-gradient(90deg, #f59e0b, #fbbf24); }
+.ach-blue::before  { background: linear-gradient(90deg, #3b82f6, #60a5fa); }
+.ach-purple::before{ background: linear-gradient(90deg, #a855f7, #c084fc); }
+.ach-green::before { background: linear-gradient(90deg, #22c55e, #4ade80); }
+
+.ach-top { display: flex; align-items: center; justify-content: space-between; }
+.ach-emoji { font-size: 1.75rem; }
+.ach-year {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  background: var(--accent-light);
+  padding: 0.2rem 0.6rem;
+  border-radius: 99px;
+  color: var(--accent);
+}
+.ach-role {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--accent);
+}
+.achievement-card p { font-size: 0.84rem; line-height: 1.65; }
