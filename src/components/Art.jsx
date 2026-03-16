@@ -4,13 +4,12 @@ import './Art.css';
 // Replace these placeholder items with your actual artwork images
 // Put your images in: public/art/art1.jpg, public/art/art2.jpg, etc.
 const artworks = [
-  { id: 1, title: 'Artwork 1', src: null, tool: 'Sketchbook' },
-  { id: 2, title: 'Artwork 2', src: null, tool: 'Sketchbook' },
-  { id: 3, title: 'Artwork 3', src: null, tool: 'Sketchbook' },
-  { id: 4, title: 'Artwork 4', src: null, tool: 'Sketchbook' },
-  { id: 5, title: 'Artwork 5', src: null, tool: 'Sketchbook' },
-  { id: 6, title: 'Artwork 6', src: null, tool: 'Sketchbook' },
-];
+  { id: 1, title: 'Artwork 1', src: '/public/art/art1.jpg', tool: 'Sketchbook' },
+  { id: 2, title: 'Artwork 2', src: '/public/art/art2.jpg', tool: 'Sketchbook' },
+  { id: 3, title: 'Artwork 3', src: '/public/art/art3.jpg', tool: 'Sketchbook' },
+  { id: 4, title: 'Artwork 4', src: '/public/art/art4.jpg', tool: 'Sketchbook' },
+  { id: 5, title: 'Artwork 5', src: '/public/art/art5.jpg', tool: 'Sketchbook' },
+ ];
 
 // HOW TO ADD YOUR ARTWORK:
 // 1. Place your image files inside the /public/art/ folder

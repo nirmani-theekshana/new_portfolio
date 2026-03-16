@@ -16,13 +16,22 @@ export default function Contact() {
     e.preventDefault();
     setStatus('sending');
     // ── Connect to your Node.js backend here ──────────────────────────
-    // Example:
-    // const res = await fetch('/api/contact', {
-    //   method: 'POST',
-    //   headers: { 'Content-Type': 'application/json' },
-    //   body: JSON.stringify(form),
-    // });
-    // if (res.ok) setStatus('sent'); else setStatus('error');
+    // Uncomment below when your backend is ready:
+    // try {
+    //   const res = await fetch('/api/contact', {
+    //     method: 'POST',
+    //     headers: { 'Content-Type': 'application/json' },
+    //     body: JSON.stringify(form),
+    //   });
+    //   if (res.ok) {
+    //     setStatus('sent');
+    //     setForm({ name: '', email: '', message: '' });
+    //   } else {
+    //     setStatus('error');
+    //   }
+    // } catch (err) {
+    //   setStatus('error');
+    // }
     // ─────────────────────────────────────────────────────────────────
     // For now, simulate success after 1s:
     setTimeout(() => {
@@ -53,8 +62,8 @@ export default function Contact() {
                   <div>
                     <span className="contact-label">Email</span>
                     {/* Replace with your actual email */}
-                    <a href="mailto:theekshananirmani2000@example.com" className="contact-value">
-                      theekshananirmani2000@example.com
+                    <a href="mailto:yasiru@example.com" className="contact-value">
+                      yasiru@example.com
                     </a>
                   </div>
                 </div>
@@ -89,7 +98,7 @@ export default function Contact() {
                     <span>LinkedIn</span>
                   </a>
                   <a
-                    href="mailto:theekshananirmani2000@example.com"
+                    href="mailto:yasiru@example.com"
                     className="contact-social-link"
                   >
                     <Mail size={20} />
@@ -153,7 +162,7 @@ export default function Contact() {
                     <textarea
                       id="message"
                       name="message"
-                      placeholder="Hi Theekshana, I'd like to discuss an internship opportunity..."
+                      placeholder="Hi Yasiru, I'd like to discuss an internship opportunity..."
                       rows={5}
                       value={form.message}
                       onChange={handleChange}

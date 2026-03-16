@@ -66,13 +66,13 @@ export default function Hero() {
                         <div className="photo-ring ring-2" />
                         <div className="photo-frame">
                              {/* Replace src with your actual photo path: src="/your-photo.jpg" */}
-                             <div className="photo-placeholder">
+                             {/*<div className="photo-placeholder">
                                 <span> Your photo here </span>
                                 <p> Replace with: <code>/public/photo.jpg</code></p>
                              </div>
-                              {/* Uncomment below and replace when you add your photo:
-                              <img src="/photo.jpg" alt="Yasiru" className="hero-photo" />
-                             */}
+                              {/* Uncomment below and replace when you add your photo:  */}
+                              <img src="/public/photo.jpg" alt="Theekshana" className="hero-photo" />
+                            
                         </div>
                         <div className="photo=badge badge-uni">
                             <span>🎓 </span> UoM | IT

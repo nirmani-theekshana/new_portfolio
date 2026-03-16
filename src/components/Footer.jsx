@@ -32,10 +32,12 @@ export default function Footer() {
           <div className="footer-contact-col">
             <span className="footer-nav-title">Connect</span>
             <div className="footer-socials">
-              <a href="https://github.com/" target="_blank" rel="noreferrer" aria-label="GitHub">
+              <a href="https://github.com/nirmani-theekshana" target="_blank" rel="noreferrer" aria-label="GitHub">
                 <Github size={18} />
               </a>
-              <a href="https://linkedin.com/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+              <a href="https://www.linkedin.com/in/theekshana-indrajith-63b418300
+
+" target="_blank" rel="noreferrer" aria-label="LinkedIn">
                 <Linkedin size={18} />
               </a>
               <a href="mailto:theekshananirmani2000@example.com" aria-label="Email">
