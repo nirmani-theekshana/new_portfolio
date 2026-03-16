@@ -10,6 +10,7 @@ import Art from './components/Art';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import './styles/globals.css';
+import Project from './components/Project';
 
 function App() {
   return (
@@ -25,10 +26,12 @@ function App() {
           <Achievements />
           <Art />
           <Contact />
+             <Project />
         </main>
         <Footer />
       </div>
     </ThemeProvider>
+ 
   );
 }
 
